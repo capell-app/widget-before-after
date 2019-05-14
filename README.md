@@ -35,21 +35,44 @@ Screenshot contract: `docs/screenshots.json`.
 
 ![Before and After Widget extension card](docs/screenshots/extension-card.svg)
 
-![Before + After fields in Layout Builder](docs/screenshots/before-after-layout-builder-editor.png)
+![Illustrative before + after public output preview](docs/screenshots/before-after-public-output.png)
 
-- Before and After Widget extension card (marketplace, required).
-- Before + After fields in Layout Builder (admin, optional).
-- Before + After public output (frontend, optional).
+- Before and After Widget extension card (marketplace, required evidence).
+- Before + After fields in Layout Builder (admin, supplementary evidence).
+- Illustrative before + after public output preview (frontend, required evidence).
+- Before + After fields in Layout Builder with admin sidebar menu open (admin, supplementary evidence).
 
 ## Technical Shape
 
-- Service providers: `Capell\WidgetBeforeAfter\Providers\WidgetBeforeAfterServiceProvider`.
-- Filament classes: `BeforeAfterWidget`.
-- Data objects: `BeforeAfterInputData`, `BeforeAfterRenderData`.
-- Manifest contributions: `content-widget: Capell\WidgetBeforeAfter\WidgetBeforeAfterContribution`.
-- Health checks: `Capell\WidgetBeforeAfter\Health\WidgetBeforeAfterHealthCheck`.
-- Blade views: `packages/widget-before-after/resources/views/widget.blade.php`.
-- Cache tags: `widget-before-after`.
+### Service providers
+
+- `Capell\WidgetBeforeAfter\Providers\WidgetBeforeAfterServiceProvider`
+
+### Filament classes
+
+- `BeforeAfterWidget`
+
+### Data objects
+
+- `BeforeAfterInputData`
+- `BeforeAfterRenderData`
+
+### Manifest contributions
+
+- `content-widget: Capell\WidgetBeforeAfter\WidgetBeforeAfterContribution`
+
+### Health checks
+
+- `Capell\WidgetBeforeAfter\Health\WidgetBeforeAfterHealthCheck`
+
+### Blade views
+
+- `packages/widget-before-after/resources/views/widget.blade.php`
+
+### Cache tags
+
+- `widget-before-after`
+
 
 ## Data Model
 
@@ -60,7 +83,7 @@ This package has no schema impact. It extends Capell through `content-widget` co
 - Required packages: `capell-app/admin`, `capell-app/core`, `capell-app/frontend`, `capell-app/layout-builder`.
 - Admin navigation: no admin page or resource contribution is declared.
 - Admin/editor extensions: `content-widget: WidgetBeforeAfterContribution`.
-- Permissions: none declared in `capell.json`.
+- Permissions: no package permission declarations or Shield gates detected; host access rules still apply.
 - Public routes: none declared.
 - Database changes: no package migrations declared.
 - Config: no package config files.
@@ -85,8 +108,7 @@ This package has no schema impact. It extends Capell through `content-widget` co
 ## Quick Start
 
 1. Install the package: `composer require capell-app/widget-before-after`.
-2. No package-specific setup command or migrations are declared.
-3. Open the package detail or install-intent surface and confirm the Before and After Widget extension card is present.
+2. Open `/screenshot-fixtures/catalogue/widget-before-after/before-after-public-output` and confirm the public output renders without admin state.
 
 ## Next Steps
 
