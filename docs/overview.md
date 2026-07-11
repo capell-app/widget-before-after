@@ -1,4 +1,4 @@
-# Before + After Widget
+# Before and After Widget
 
 <!-- prettier-ignore-start -->
 
