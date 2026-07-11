@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Before + After beta Marketplace artwork</title>
+  <desc id="desc">Compare two local images with one accessible control.</desc>
+  <rect width="1280" height="720" fill="#F4F0E8"/>
+  <path d="M0 0H1280V92H0Z" fill="#111827"/>
+  <text x="64" y="58" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="2" fill="#FFFFFF">FOUNDATION WIDGET · BETA</text>
+  <rect x="64" y="142" width="88" height="10" rx="5" fill="#EA580C"/>
+  <text x="64" y="236" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="800" fill="#111827">Before + After</text>
+  <text x="64" y="304" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#334155">Compare two local images</text>
+  <text x="64" y="344" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#334155">with one accessible control.</text>
+  <rect x="64" y="412" width="500" height="114" rx="18" fill="#FFFFFF" stroke="#111827" stroke-width="4"/>
+  <circle cx="108" cy="469" r="20" fill="#EA580C"/>
+  <path d="M98 469L106 477L120 459" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="148" y="461" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="800" fill="#111827">HONEST BETA EVIDENCE</text>
+  <text x="148" y="491" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Fixture captures are documented next.</text>
+  <rect x="735" y="174" width="430" height="362" rx="20" fill="#FFFFFF" stroke="#111827" stroke-width="6"/>
+  <path d="M741 180H950V530H741Z" fill="#FED7AA"/><path d="M950 180H1159V530H950Z" fill="#BFDBFE"/>
+  <path d="M790 450L875 330L940 420V530H741Z" fill="#9A3412" opacity=".55"/><path d="M960 430L1045 300L1159 460V530H950Z" fill="#1D4ED8" opacity=".55"/>
+  <line x1="950" y1="180" x2="950" y2="530" stroke="#111827" stroke-width="8"/><circle cx="950" cy="355" r="34" fill="#EA580C" stroke="#111827" stroke-width="5"/>
+  <path d="M935 355H965M935 355L946 344M935 355L946 366M965 355L954 344M965 355L954 366" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="64" y="664" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="1.4" fill="#475569">FREE FIRST-PARTY EXTENSION</text>
+  <text x="1216" y="664" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="800" fill="#111827">CAPELL</text>
+</svg>
