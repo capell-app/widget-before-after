@@ -29,6 +29,8 @@ Status details:
 
 Screenshot contract: `docs/screenshots.json`.
 
+![Before and After Widget extension card](docs/screenshots/extension-card.svg)
+
 - Before and After Widget extension card (marketplace, required).
 - Before + After fields in Layout Builder (admin, optional).
 - Before + After public output (frontend, optional).
