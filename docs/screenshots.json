@@ -1,0 +1,52 @@
+{
+    "package": "widget-before-after",
+    "composerName": "capell-app/widget-before-after",
+    "generatedFor": "deployment-screenshot-runner",
+    "requiresInstalledPackage": true,
+    "composerRequires": [
+        "capell-app/widget-before-after",
+        "capell-app/layout-builder"
+    ],
+    "outputDirectory": "packages/widget-before-after/docs/screenshots",
+    "auditStatus": "fixture-needed",
+    "auditReason": "The package is release-ready with honest interim Marketplace artwork; deterministic Layout Builder and public-page fixtures still need capture.",
+    "entries": [
+        {
+            "id": "widget-before-after-extension-card",
+            "title": "Before and After Widget extension card.",
+            "package": "widget-before-after",
+            "surface": "marketplace",
+            "targetType": "marketplace-asset",
+            "target": "extension-card",
+            "required": true,
+            "path": "docs/assets/marketplace/extension-card.svg",
+            "screenshotPath": "packages/widget-before-after/docs/screenshots/extension-card.svg",
+            "notes": "Committed Beta Marketplace card artwork for Before and After Widget.",
+            "useCase": "A buyer reviews the Beta extension card before enabling Before and After Widget."
+        },
+        {
+            "id": "before-after-layout-builder-editor",
+            "title": "Before + After fields in Layout Builder.",
+            "package": "widget-before-after",
+            "surface": "admin",
+            "targetType": "admin-surface",
+            "target": "Layout Builder page editor",
+            "required": false,
+            "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Capture the editor state before the page is published.",
+            "useCase": "An editor can see the fields used to configure the Before + After widget.",
+            "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-layout-builder-editor.png"
+        },
+        {
+            "id": "before-after-public-output",
+            "title": "Before + After public output.",
+            "package": "widget-before-after",
+            "surface": "frontend",
+            "targetType": "artifact",
+            "target": "Seeded public page fixture",
+            "required": false,
+            "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Verify the rendered HTML contains no authoring controls, field paths, model identifiers, or signed admin URLs.",
+            "useCase": "A visitor compares two local images without losing keyboard access or a no-JavaScript fallback.",
+            "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png"
+        }
+    ]
+}
