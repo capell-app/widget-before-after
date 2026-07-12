@@ -36,7 +36,8 @@
     "contributes": [
         {
             "type": "content-widget",
-            "class": "Capell\\WidgetBeforeAfter\\WidgetBeforeAfterContribution"
+            "class": "Capell\\WidgetBeforeAfter\\WidgetBeforeAfterContribution",
+            "key": "capell-app.widget-before-after"
         }
     ],
     "database": {
