@@ -4,7 +4,7 @@
     "slug": "widget-before-after",
     "displayName": "Before and After Widget",
     "kind": "package",
-    "capellApiVersion": "^0.0.1",
+    "capellApiVersion": "^0.0",
     "version": "0.0.x-dev",
     "description": "Keyboard and touch friendly image comparison with a native range control and side-by-side fallback.",
     "product": {
