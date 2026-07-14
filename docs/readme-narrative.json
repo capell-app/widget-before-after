@@ -1,0 +1,35 @@
+{
+    "whatThisPluginAdds": {
+        "text": "Before and After adds a Layout Builder widget for comparing two local images with a bounded range control. The public comparison supports keyboard and touch interaction with a non-interactive fallback.",
+        "evidence": [
+            "src/Filament/BeforeAfterWidget.php",
+            "resources/views/widget.blade.php",
+            "tests/Feature/WidgetBeforeAfterTest.php"
+        ]
+    },
+    "surfaceOutcome": {
+        "text": "Editors select the two images and comparison settings in Layout Builder, and visitors can move the public reveal control to inspect the difference.",
+        "evidence": [
+            "capell.json",
+            "src/Filament/BeforeAfterWidget.php",
+            "resources/views/widget.blade.php"
+        ]
+    },
+    "whyItMatters": {
+        "developers": {
+            "text": "A typed widget definition keeps editor input, render data, and the Blade fallback behind one registered Layout Builder extension.",
+            "evidence": [
+                "src/Providers/WidgetBeforeAfterServiceProvider.php",
+                "src/Filament/BeforeAfterWidget.php",
+                "tests/Feature/WidgetBeforeAfterTest.php"
+            ]
+        },
+        "teams": {
+            "text": "Teams can explain visual changes in one focused component without preparing separate image states or custom comparison code.",
+            "evidence": [
+                "resources/views/widget.blade.php",
+                "tests/Feature/WidgetBeforeAfterTest.php"
+            ]
+        }
+    }
+}
