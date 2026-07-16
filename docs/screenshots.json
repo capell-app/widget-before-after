@@ -34,6 +34,11 @@
             "required": false,
             "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Capture the editor state before the page is published.",
             "useCase": "An editor can see the fields used to configure the Before + After widget.",
+            "url": "/screenshot-fixtures/widgets/before-after/editor",
+            "waitFor": "[data-widget-screenshot-fixture=\"editor\"]",
+            "colorSchemes": [
+                "light"
+            ],
             "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-layout-builder-editor.png"
         },
         {
@@ -46,6 +51,11 @@
             "required": false,
             "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Verify the rendered HTML contains no authoring controls, field paths, model identifiers, or signed admin URLs.",
             "useCase": "A visitor compares two local images without losing keyboard access or a no-JavaScript fallback.",
+            "url": "/screenshot-fixtures/widgets/before-after/public",
+            "waitFor": "[data-widget-screenshot-fixture=\"public\"]",
+            "colorSchemes": [
+                "light"
+            ],
             "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png"
         }
     ]
