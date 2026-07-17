@@ -36,9 +36,7 @@
             "useCase": "An editor can see the fields used to configure the Before + After widget.",
             "url": "/screenshot-fixtures/widgets/before-after/editor",
             "waitFor": "[data-widget-screenshot-fixture=\"editor\"]",
-            "colorSchemes": [
-                "light"
-            ],
+            "colorSchemes": ["light"],
             "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-layout-builder-editor.png"
         },
         {
@@ -53,9 +51,7 @@
             "useCase": "A visitor compares two local images without losing keyboard access or a no-JavaScript fallback.",
             "url": "/screenshot-fixtures/widgets/before-after/public",
             "waitFor": "[data-widget-screenshot-fixture=\"public\"]",
-            "colorSchemes": [
-                "light"
-            ],
+            "colorSchemes": ["light"],
             "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png"
         }
     ]
