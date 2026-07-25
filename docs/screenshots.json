@@ -13,6 +13,7 @@
     "entries": [
         {
             "id": "widget-before-after-extension-card",
+            "colorSchemes": ["light"],
             "title": "Before and After Widget extension card.",
             "package": "widget-before-after",
             "surface": "marketplace",
@@ -41,18 +42,18 @@
         },
         {
             "id": "before-after-public-output",
-            "title": "Before + After public output.",
+            "title": "Illustrative before + after public output preview.",
             "package": "widget-before-after",
             "surface": "frontend",
-            "targetType": "artifact",
-            "target": "Seeded public page fixture",
-            "required": false,
-            "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Verify the rendered HTML contains no authoring controls, field paths, model identifiers, or signed admin URLs.",
+            "targetType": "frontend-url",
+            "target": "/screenshot-fixtures/catalogue/widget-before-after/before-after-public-output",
+            "required": true,
+            "notes": "Illustrative deterministic catalogue fixture, not a live package UI capture. Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Verify the rendered HTML contains no authoring controls, field paths, model identifiers, or signed admin URLs.",
             "useCase": "A visitor compares two local images without losing keyboard access or a no-JavaScript fallback.",
-            "url": "/screenshot-fixtures/widgets/before-after/public",
-            "waitFor": "[data-widget-screenshot-fixture=\"public\"]",
-            "colorSchemes": ["light"],
-            "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png"
+            "url": "/screenshot-fixtures/catalogue/widget-before-after/before-after-public-output",
+            "colorSchemes": ["light", "dark"],
+            "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png",
+            "fixtureKind": "illustrative-catalogue"
         }
     ]
 }
