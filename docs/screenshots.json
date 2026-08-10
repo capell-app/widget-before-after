@@ -54,6 +54,27 @@
             "colorSchemes": ["light", "dark"],
             "screenshotPath": "packages/widget-before-after/docs/screenshots/before-after-public-output.png",
             "fixtureKind": "illustrative-catalogue"
+        },
+        {
+            "id": "widget-before-after-admin-sidebar-menu-open",
+            "title": "Before + After fields in Layout Builder with admin sidebar menu open.",
+            "package": "widget-before-after",
+            "surface": "admin",
+            "targetType": "admin-surface",
+            "target": "Layout Builder page editor",
+            "required": false,
+            "notes": "Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. Capture the editor state before the page is published. Capture this same admin surface with the fully collapsible sidebar opened.",
+            "useCase": "An editor can see the fields used to configure the Before + After widget.",
+            "url": "/screenshot-fixtures/widgets/before-after/editor",
+            "waitFor": "[data-widget-screenshot-fixture=\"editor\"]",
+            "colorSchemes": ["light"],
+            "screenshotPath": "packages/widget-before-after/docs/screenshots/widget-before-after-admin-sidebar-menu-open.png",
+            "beforeWait": [
+                {
+                    "type": "click",
+                    "selector": ".fi-topbar-open-collapse-sidebar-btn"
+                }
+            ]
         }
     ]
 }
