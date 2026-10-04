@@ -10,9 +10,11 @@ const initialise = (root) => {
             ),
     )
 }
-document.querySelectorAll('[data-capell-before-after]').forEach(initialise)
+document
+    .querySelectorAll('[data-capell-widget-before-after]')
+    .forEach(initialise)
 document.addEventListener('capell:content-ready', (event) =>
     event.target
-        ?.querySelectorAll?.('[data-capell-before-after]')
+        ?.querySelectorAll?.('[data-capell-widget-before-after]')
         .forEach(initialise),
 )

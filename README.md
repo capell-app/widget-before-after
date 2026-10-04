@@ -10,8 +10,6 @@ Before and After adds a Layout Builder widget for comparing two local images wit
 
 Editors select the two images and comparison settings in Layout Builder, and visitors can move the public reveal control to inspect the difference.
 
-Evidence: [`src/Filament/BeforeAfterWidget.php`](src/Filament/BeforeAfterWidget.php), [`resources/views/widget.blade.php`](resources/views/widget.blade.php), [`tests/Feature/WidgetBeforeAfterTest.php`](tests/Feature/WidgetBeforeAfterTest.php), [`capell.json`](capell.json).
-
 Status details:
 
 - Status: Available
@@ -27,19 +25,17 @@ Status details:
 
 **For teams:** Teams can explain visual changes in one focused component without preparing separate image states or custom comparison code.
 
-Evidence: [`src/Providers/WidgetBeforeAfterServiceProvider.php`](src/Providers/WidgetBeforeAfterServiceProvider.php), [`src/Filament/BeforeAfterWidget.php`](src/Filament/BeforeAfterWidget.php), [`tests/Feature/WidgetBeforeAfterTest.php`](tests/Feature/WidgetBeforeAfterTest.php), [`resources/views/widget.blade.php`](resources/views/widget.blade.php).
-
 ## Screens And Workflow
 
 Screenshot contract: `docs/screenshots.json`.
 
 ![Before and After Widget extension card](docs/screenshots/extension-card.svg)
 
-![Illustrative before + after public output preview](docs/screenshots/before-after-public-output.png)
+![Before After public output](docs/screenshots/before-after-public-output.png)
 
 - Before and After Widget extension card (marketplace, required evidence).
 - Before + After fields in Layout Builder (admin, supplementary evidence).
-- Illustrative before + after public output preview (frontend, required evidence).
+- Before After public output (frontend, required evidence).
 - Before + After fields in Layout Builder with admin sidebar menu open (admin, supplementary evidence).
 
 ## Technical Shape
@@ -108,7 +104,7 @@ This package has no schema impact. It extends Capell through `content-widget` co
 ## Quick Start
 
 1. Install the package: `composer require capell-app/widget-before-after`.
-2. Open `/screenshot-fixtures/catalogue/widget-before-after/before-after-public-output` and confirm the public output renders without admin state.
+2. Open the package detail or install-intent surface and confirm the Before and After Widget extension card is present.
 
 ## Next Steps
 
@@ -121,6 +117,5 @@ This package has no schema impact. It extends Capell through `content-widget` co
 - [Capell documentation design system](../../docs/DESIGN_SYSTEM.md)
 - [Capell and package ERD notes](../../docs/erd/capell-and-package-erds.md)
 - Related packages: [Layout Builder](../layout-builder/README.md).
-- Focused tests: `vendor/bin/pest packages/widget-before-after/tests --configuration=phpunit.xml`.
 
 <!-- prettier-ignore-end -->

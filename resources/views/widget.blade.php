@@ -1,7 +1,7 @@
 @php /** @var \Capell\WidgetBeforeAfter\Data\BeforeAfterRenderData $renderData */ @endphp
 <figure
     class="capell-before-after capell-before-after--{{ $renderData->orientation }}"
-    data-capell-before-after
+    data-capell-widget-before-after
     style="--comparison-position:{{ $renderData->startingPosition }}%"
 >
     <div class="capell-before-after__images">
