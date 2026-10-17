@@ -1,5 +1,5 @@
 .capell-before-after {
-    color: var(--theme-text, #172033);
+    color: inherit;
 }
 .capell-before-after__images {
     display: grid;
@@ -19,7 +19,7 @@
     inset: 0.75rem auto auto 0.75rem;
     padding: 0.25rem 0.5rem;
     background: var(--theme-surface, #fff);
-    color: inherit;
+    color: var(--theme-foreground, currentColor);
 }
 .capell-before-after input {
     width: 100%;

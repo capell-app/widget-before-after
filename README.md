@@ -29,11 +29,11 @@ Status details:
 
 Screenshot contract: `docs/screenshots.json`.
 
-![Before and After Widget extension card](docs/screenshots/extension-card.svg)
-
 ![Before After public output](docs/screenshots/before-after-public-output.png)
 
-- Before and After Widget extension card (marketplace, required evidence).
+![Before + After fields in Layout Builder](docs/screenshots/before-after-layout-builder-editor.png)
+
+- Before and After Widget extension card (marketplace, supplementary documentation fixture).
 - Before + After fields in Layout Builder (admin, supplementary evidence).
 - Before After public output (frontend, required evidence).
 - Before + After fields in Layout Builder with admin sidebar menu open (admin, supplementary evidence).
@@ -55,6 +55,7 @@ Screenshot contract: `docs/screenshots.json`.
 
 ### Manifest contributions
 
+- `asset: Capell\WidgetBeforeAfter\WidgetBeforeAfterContribution`
 - `content-widget: Capell\WidgetBeforeAfter\WidgetBeforeAfterContribution`
 
 ### Health checks
@@ -72,7 +73,7 @@ Screenshot contract: `docs/screenshots.json`.
 
 ## Data Model
 
-This package has no schema impact. It extends Capell through `content-widget` contributions instead of declaring package-owned tables.
+This package has no schema impact. It extends Capell through `asset` contributions and `content-widget` contributions instead of declaring package-owned tables.
 
 ## Install Impact
 
@@ -104,7 +105,7 @@ This package has no schema impact. It extends Capell through `content-widget` co
 ## Quick Start
 
 1. Install the package: `composer require capell-app/widget-before-after`.
-2. Open the package detail or install-intent surface and confirm the Before and After Widget extension card is present.
+2. Open a host admin workflow that uses the package extension and verify Before and After Widget is available.
 
 ## Next Steps
 

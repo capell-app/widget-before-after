@@ -38,6 +38,11 @@
             "type": "content-widget",
             "key": "capell-app.before-after",
             "class": "Capell\\WidgetBeforeAfter\\WidgetBeforeAfterContribution"
+        },
+        {
+            "type": "asset",
+            "key": "resource-group:capell-app.widget-before-after",
+            "class": "Capell\\WidgetBeforeAfter\\WidgetBeforeAfterContribution"
         }
     ],
     "database": {

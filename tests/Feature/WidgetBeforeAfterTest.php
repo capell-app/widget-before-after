@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Capell\Core\Facades\CapellCore;
 use Capell\Frontend\Actions\AssertPublicHtmlContainsNoAuthoringSurfaceAction;
 use Capell\Frontend\Support\Security\PublicHtmlSafetyInspector;
 use Capell\LayoutBuilder\Support\WidgetExtensions\WidgetExtensionRegistry;
@@ -13,6 +14,7 @@ use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function (): void {
+    CapellCore::forcePackageInstalled('capell-app/widget-before-after');
     $this->app->register(WidgetBeforeAfterServiceProvider::class);
 });
 
