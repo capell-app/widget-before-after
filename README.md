@@ -101,11 +101,17 @@ This package has no schema impact. It extends Capell through `asset` contributio
 | --- | --- | --- | --- |
 | Package surface is missing after install | Provider or manifest is not loaded | Confirm `capell.json`, package `composer.json`, and provider registration | Reinstall the package, refresh Composer autoload, and clear host caches |
 | Public output leaks unexpected state | Render data, cache variation, or authoring boundary has regressed | Check public Blade, cache tags, and public-output safety tests | Move data loading out of Blade and rerun the package public-output tests |
+| An image is refused | The path is a web address or contains characters outside letters, numbers and `_ / . -` | Check the before and after image fields | Pick both images from the media library |
+| The widget will not save | The alt text or label is empty, or the starting position is outside 0 to 100 | Check both alt texts, both labels and the starting position | Fill every alt text and label, and set the position between 0 and 100 |
 
 ## Quick Start
 
 1. Install the package: `composer require capell-app/widget-before-after`.
-2. Open a host admin workflow that uses the package extension and verify Before and After Widget is available.
+2. Open a page, click **Layout builder**, **Add widgets**, then choose **Before and After**.
+
+## Upgrading
+
+No manual steps between minor versions.
 
 ## Next Steps
 

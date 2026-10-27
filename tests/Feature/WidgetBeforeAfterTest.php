@@ -6,10 +6,12 @@ use Capell\Core\Facades\CapellCore;
 use Capell\Frontend\Actions\AssertPublicHtmlContainsNoAuthoringSurfaceAction;
 use Capell\Frontend\Support\Security\PublicHtmlSafetyInspector;
 use Capell\LayoutBuilder\Support\WidgetExtensions\WidgetExtensionRegistry;
+use Capell\Tests\Support\RenderedHtml;
 use Capell\WidgetBeforeAfter\Data\BeforeAfterInputData;
 use Capell\WidgetBeforeAfter\Data\BeforeAfterRenderData;
 use Capell\WidgetBeforeAfter\Health\WidgetBeforeAfterHealthCheck;
 use Capell\WidgetBeforeAfter\Providers\WidgetBeforeAfterServiceProvider;
+use Illuminate\Translation\Translator;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -43,4 +45,13 @@ it('renders public before-after markup accepted by the public HTML safety action
     expect(resolve(PublicHtmlSafetyInspector::class)->containsAuthoringSurface(
         '<section data-capell-before-after>Widget</section>',
     ))->toBeTrue();
+});
+
+it('names the comparison control in the active public locale', function (): void {
+    resolve(Translator::class)->addLines(['widget.comparison_position' => 'Position de comparaison'], 'fr', 'capell-widget-before-after');
+    app()->setLocale('fr');
+
+    $renderData = BeforeAfterRenderData::from(['beforeImage' => 'a.jpg', 'afterImage' => 'b.jpg', 'beforeAlt' => 'Avant', 'afterAlt' => 'Après', 'beforeLabel' => 'Avant', 'afterLabel' => 'Après']);
+    $html = new RenderedHtml(view('capell-widget-before-after::widget', ['renderData' => $renderData])->render());
+    expect(trim($html->element('//label[.//input[@type="range"]]/span')->textContent))->toBe(__('capell-widget-before-after::widget.comparison_position'));
 });

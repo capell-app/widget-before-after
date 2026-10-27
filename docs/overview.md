@@ -16,6 +16,8 @@ In Layout Builder, as a Before and After widget with local before and after imag
 
 ## Good to know
 
+- The range control name uses the active page locale through the `comparison_position` translation.
+
 - This free beta extension belongs to Capell Foundation and requires Layout Builder.
 - The widget uses local media, needs no external service, and keeps a useful no-JavaScript comparison.
 

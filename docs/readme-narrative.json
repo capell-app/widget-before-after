@@ -31,5 +31,21 @@
                 "tests/Feature/WidgetBeforeAfterTest.php"
             ]
         }
-    }
+    },
+    "troubleshooting": [
+        {
+            "symptom": "An image is refused",
+            "cause": "The path is a web address or contains characters outside letters, numbers and `_ / . -`",
+            "check": "Check the before and after image fields",
+            "fix": "Pick both images from the media library",
+            "evidence": ["src/Data/BeforeAfterInputData.php"]
+        },
+        {
+            "symptom": "The widget will not save",
+            "cause": "The alt text or label is empty, or the starting position is outside 0 to 100",
+            "check": "Check both alt texts, both labels and the starting position",
+            "fix": "Fill every alt text and label, and set the position between 0 and 100",
+            "evidence": ["src/Data/BeforeAfterInputData.php"]
+        }
+    ]
 }

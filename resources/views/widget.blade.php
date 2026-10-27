@@ -19,7 +19,9 @@
         </div>
     </div>
     <label
-        ><span class="capell-visually-hidden">Comparison position</span
+        ><span
+            class="capell-visually-hidden"
+            >{{ __('capell-widget-before-after::widget.comparison_position') }}</span
         ><input
             type="range"
             min="0"
