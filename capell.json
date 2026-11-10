@@ -8,7 +8,7 @@
     "version": "1.0.0",
     "description": "Keyboard and touch friendly image comparison with a native range control and side-by-side fallback.",
     "product": {
-        "group": "Capell Foundation",
+        "group": "Capell Essentials",
         "tier": "free",
         "bundle": "foundation"
     },
@@ -143,7 +143,34 @@
     },
     "marketplace": {
         "summary": "Compare two local images with an accessible native slider.",
+        "description": "Show renovations, restorations, treatments or design changes as an accessible before-and-after image slider that keyboard, touch and pointer users operate the same way. Requires Layout Builder. Limits: both images must be uploaded to the Capell media library; without JavaScript the images show side by side.",
+        "problem": "Visitors comparing separate images can miss what changed between them.",
+        "outcome": "A page has an interactive comparison of two local images.",
+        "faq": [
+            {
+                "question": "How do visitors compare images?",
+                "answer": "They move a reveal control that supports keyboard and touch interaction."
+            },
+            {
+                "question": "Are remote comparison images accepted?",
+                "answer": "No. Both images must use local media paths."
+            },
+            {
+                "question": "What happens without interactive controls?",
+                "answer": "The public comparison includes a non-interactive fallback."
+            }
+        ],
         "screenshots": [
+            {
+                "path": "docs/assets/marketplace/listing-before-after-public-output.png",
+                "alt": "Before After public output",
+                "caption": "Before After public output"
+            },
+            {
+                "path": "docs/assets/marketplace/listing-before-after-layout-builder-editor.png",
+                "alt": "Before + After fields in Layout Builder",
+                "caption": "Before + After fields in Layout Builder"
+            },
             {
                 "path": "docs/assets/marketplace/extension-card.jpg",
                 "alt": "Before and After widget preview",
