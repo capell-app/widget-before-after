@@ -6,7 +6,7 @@
     "kind": "package",
     "capellApiVersion": "^1.0",
     "version": "1.0.0",
-    "description": "Keyboard and touch friendly image comparison with a native range control and side-by-side fallback.",
+    "description": "Your before photo and after photo as one picture, with a slider visitors move to reveal the change.",
     "product": {
         "group": "Capell Essentials",
         "tier": "free",
@@ -59,7 +59,7 @@
     },
     "settings": [],
     "permissions": [],
-    "capabilities": ["frontend.public-static"],
+    "capabilities": ["frontend-surface"],
     "security": {
         "riskTier": "low",
         "publicSurface": {
@@ -142,41 +142,63 @@
         "privateDocsRequested": false
     },
     "marketplace": {
-        "summary": "Compare two local images with an accessible native slider.",
-        "description": "Show renovations, restorations, treatments or design changes as an accessible before-and-after image slider that keyboard, touch and pointer users operate the same way. Requires Layout Builder. Limits: both images must be uploaded to the Capell media library; without JavaScript the images show side by side.",
-        "problem": "Visitors comparing separate images can miss what changed between them.",
-        "outcome": "A page has an interactive comparison of two local images.",
+        "summary": "A before and after photo comparison with labels and a slider, shown as two side-by-side photos if scripts are blocked.",
+        "description": "Upload a before photo and an after photo, give each a short label and a description for screen readers, and they become one picture with a slider. You pick where the split starts, halfway by default, and whether the after photo comes in from the left or from the top. Visitors drag it with a finger or mouse, and keyboard users move it with the arrow keys. Photos aren't cropped or aligned for you. Both must be uploaded to the Capell media library. It needs Layout Builder to place it on a page.",
+        "problem": "Two photos side by side don't show how much changed, so finished work gets scrolled past.",
+        "outcome": "Visitors move a slider under one picture and see exactly what your work changed.",
         "faq": [
             {
-                "question": "How do visitors compare images?",
-                "answer": "They move a reveal control that supports keyboard and touch interaction."
+                "question": "How do visitors compare the photos?",
+                "answer": "They drag the slider bar under the picture with a finger or a mouse, or move it with the arrow keys. It begins halfway across unless you set another starting point."
             },
             {
-                "question": "Are remote comparison images accepted?",
-                "answer": "No. Both images must use local media paths."
+                "question": "Can I use photos from another website?",
+                "answer": "No. Both photos have to be uploaded to your own site."
             },
             {
-                "question": "What happens without interactive controls?",
-                "answer": "The public comparison includes a non-interactive fallback."
+                "question": "Does it crop or line up my photos?",
+                "answer": "No. It leaves them as they are, so two shots of the same size taken from the same spot compare best."
+            },
+            {
+                "question": "What if a visitor's browser blocks scripts?",
+                "answer": "They see both photos next to each other, each with its label. The slider bar still shows underneath but does not change the picture."
+            },
+            {
+                "question": "Can one page hold several comparisons?",
+                "answer": "Yes. Each comparison holds one pair of photos, and a page can carry as many comparisons as you add."
             }
         ],
         "screenshots": [
             {
-                "path": "docs/assets/marketplace/listing-before-after-public-output.png",
-                "alt": "Before After public output",
-                "caption": "Before After public output"
+                "path": "docs/assets/marketplace/listing-before-after-public-output.webp",
+                "alt": "One picture split halfway, a laptop on a desk labelled At work on the left and an office corridor on the right",
+                "caption": "Visitors drag the slider to change how much of each photo they see."
             },
             {
                 "path": "docs/assets/marketplace/listing-before-after-layout-builder-editor.png",
-                "alt": "Before + After fields in Layout Builder",
-                "caption": "Before + After fields in Layout Builder"
+                "alt": "Page editor with a Before and After block open, showing the before image, alt text, label and the start of the after image",
+                "caption": "Each side takes an uploaded photo, a description for screen readers and a short label."
             },
             {
                 "path": "docs/assets/marketplace/extension-card.jpg",
-                "alt": "Before and After widget preview",
-                "caption": "Before and After widget"
+                "alt": "Marketplace card for the Before and After widget with a photo split by a slider and the steps Install, Use and Evolve",
+                "caption": "Card used for the widget's Marketplace listing."
             }
         ],
         "categories": ["foundation", "frontend", "media"]
+    },
+    "contributionTraceability": {
+        "contributions": [
+            {
+                "type": "asset",
+                "key": "resource-group:capell-app.widget-before-after",
+                "providerBucket": "runtime"
+            },
+            {
+                "type": "content-widget",
+                "key": "capell-app.before-after",
+                "providerBucket": "runtime"
+            }
+        ]
     }
 }

@@ -23,7 +23,7 @@
             "path": "docs/assets/marketplace/extension-card.svg",
             "fixtureKind": "illustrative-catalogue",
             "notes": "Committed Beta Marketplace card artwork for Before and After Widget.",
-            "useCase": "A buyer reviews the Beta extension card before enabling Before and After Widget."
+            "useCase": "The Before and After Widget extension card, marked Beta."
         },
         {
             "id": "before-after-layout-builder-editor",

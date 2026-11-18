@@ -2,6 +2,7 @@
 <figure
     class="capell-before-after capell-before-after--{{ $renderData->orientation }}"
     data-capell-widget-before-after
+    data-position-text="{{ __('capell-widget-before-after::widget.position_text', ['percent' => ':percent']) }}"
     style="--comparison-position:{{ $renderData->startingPosition }}%"
 >
     <div class="capell-before-after__images">
@@ -27,6 +28,8 @@
             min="0"
             max="100"
             value="{{ $renderData->startingPosition }}"
+            aria-orientation="{{ $renderData->orientation === 'vertical' ? 'vertical' : 'horizontal' }}"
+            aria-valuetext="{{ __('capell-widget-before-after::widget.position_text', ['percent' => $renderData->startingPosition]) }}"
             data-comparison-range
     /></label>
 </figure>

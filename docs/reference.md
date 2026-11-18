@@ -6,7 +6,7 @@ Developer reference for `capell-app/widget-before-after`. Start with the [README
 
 ## Package Details
 
-Before and After Widget is an **Available**, **No schema impact** Capell package in the **Capell Essentials** product group. It ships as `capell-app/widget-before-after` and extends these surfaces: admin, frontend.
+Before and After Widget is an **Available** Capell package in the **Capell Essentials** product group. It ships as `capell-app/widget-before-after` and extends these surfaces: admin, frontend.
 
 - Status: Available
 - Tier: free

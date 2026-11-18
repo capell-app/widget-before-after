@@ -3,11 +3,17 @@ const initialise = (root) => {
     root.classList.add('is-ready')
     root.querySelector('[data-comparison-range]')?.addEventListener(
         'input',
-        (event) =>
-            root.style.setProperty(
-                '--comparison-position',
-                `${event.currentTarget.value}%`,
-            ),
+        (event) => {
+            const range = event.currentTarget
+            root.style.setProperty('--comparison-position', `${range.value}%`)
+            // Screen readers announce this text rather than a bare number.
+            const template = root.dataset.positionText
+            if (template)
+                range.setAttribute(
+                    'aria-valuetext',
+                    template.replaceAll(':percent', range.value),
+                )
+        },
     )
 }
 document

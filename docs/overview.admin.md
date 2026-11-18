@@ -14,9 +14,9 @@ In Layout Builder, as a Before and After widget with local before and after imag
 
 - The range control name uses the active page locale through the `comparison_position` translation.
 
-- This free beta extension belongs to Capell Essentials and requires Layout Builder.
+- This free extension belongs to Capell Essentials and requires Layout Builder.
 - The widget uses local media, needs no external service, and keeps a useful no-JavaScript comparison.
 
 ## Screenshot status
 
-Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible. The committed Marketplace card is interim beta artwork until these two fixture captures are recorded.
+Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible.

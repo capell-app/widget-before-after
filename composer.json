@@ -1,6 +1,6 @@
 {
     "name": "capell-app/widget-before-after",
-    "description": "Accessible before and after image comparison widget for Capell.",
+    "description": "Before and after photo comparison widget for Capell pages, with labels and a slider visitors drag to reveal the change. Needs Layout Builder.",
     "type": "library",
     "license": "proprietary",
     "require": {

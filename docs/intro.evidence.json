@@ -1,0 +1,45 @@
+[
+    {
+        "claim": "The editor uploads a before and an after image, each with a label and alt text",
+        "evidence": [
+            "src/Filament/BeforeAfterWidget.php",
+            "src/Data/BeforeAfterInputData.php"
+        ]
+    },
+    {
+        "claim": "The editor sets where the split starts, halfway by default",
+        "evidence": [
+            "src/Filament/BeforeAfterWidget.php",
+            "src/Data/BeforeAfterInputData.php"
+        ]
+    },
+    {
+        "claim": "The after photo is revealed from the left or from the top",
+        "evidence": [
+            "src/Enums/ComparisonOrientation.php",
+            "resources/dist/widget.js",
+            "resources/dist/widget.css"
+        ]
+    },
+    {
+        "claim": "Visitors move a slider under the picture by touch, mouse or arrow keys",
+        "evidence": [
+            "resources/views/widget.blade.php",
+            "resources/dist/widget.js"
+        ]
+    },
+    {
+        "claim": "It does not crop or align the photos; one pair per comparison, several comparisons per page",
+        "evidence": [
+            "resources/dist/widget.css",
+            "src/Data/BeforeAfterInputData.php"
+        ]
+    },
+    {
+        "claim": "Without scripts, the two photos sit side by side with labels",
+        "evidence": [
+            "resources/dist/widget.css",
+            "resources/views/widget.blade.php"
+        ]
+    }
+]

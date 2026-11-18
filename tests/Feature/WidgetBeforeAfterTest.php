@@ -55,3 +55,13 @@ it('names the comparison control in the active public locale', function (): void
     $html = new RenderedHtml(view('capell-widget-before-after::widget', ['renderData' => $renderData])->render());
     expect(trim($html->element('//label[.//input[@type="range"]]/span')->textContent))->toBe(__('capell-widget-before-after::widget.comparison_position'));
 });
+
+it('gives the comparison range spoken text and its orientation', function (string $orientation): void {
+    $renderData = BeforeAfterRenderData::from(['beforeImage' => 'a.jpg', 'afterImage' => 'b.jpg', 'beforeAlt' => 'Before', 'afterAlt' => 'After', 'beforeLabel' => 'Before', 'afterLabel' => 'After', 'orientation' => $orientation, 'startingPosition' => 30]);
+    $html = new RenderedHtml(view('capell-widget-before-after::widget', ['renderData' => $renderData])->render());
+    $range = $html->element('//input[@type="range"]');
+
+    expect($range->getAttribute('aria-valuetext'))->toBe('30% of the after image shown')
+        ->and($range->getAttribute('aria-orientation'))->toBe($orientation)
+        ->and($html->element('//figure')->getAttribute('data-position-text'))->toBe(':percent% of the after image shown');
+})->with(['horizontal', 'vertical']);
