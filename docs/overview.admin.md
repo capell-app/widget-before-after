@@ -16,7 +16,3 @@ In Layout Builder, as a Before and After widget with local before and after imag
 
 - This free extension belongs to Capell Essentials and requires Layout Builder.
 - The widget uses local media, needs no external service, and keeps a useful no-JavaScript comparison.
-
-## Screenshot status
-
-Capture the configured Layout Builder fields and a public comparison at a clear mid-point with both labels visible.

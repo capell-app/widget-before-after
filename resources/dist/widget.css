@@ -25,6 +25,9 @@
     width: 100%;
     min-height: 44px;
 }
+.capell-before-after:not(.is-ready) label {
+    display: none;
+}
 .capell-before-after.is-ready .capell-before-after__images {
     display: block;
     position: relative;

@@ -143,7 +143,7 @@
     },
     "marketplace": {
         "summary": "A before and after photo comparison with labels and a slider, shown as two side-by-side photos if scripts are blocked.",
-        "description": "Upload a before photo and an after photo, give each a short label and a description for screen readers, and they become one picture with a slider. You pick where the split starts, halfway by default, and whether the after photo comes in from the left or from the top. Visitors drag it with a finger or mouse, and keyboard users move it with the arrow keys. Photos aren't cropped or aligned for you. Both must be uploaded to the Capell media library. It needs Layout Builder to place it on a page.",
+        "description": "Upload a before photo and an after photo, give each a short label and a description for screen readers, and they become one picture with a slider. You pick where the split starts, halfway by default, and whether the after photo comes in from the left or from the top. Visitors drag it with a finger or mouse, and keyboard users move it with the arrow keys. Photos aren't cropped or aligned for you. Both must be uploaded to the Capell media library. Without JavaScript, the photos still show side by side. It needs Layout Builder to place it on a page.",
         "problem": "Two photos side by side don't show how much changed, so finished work gets scrolled past.",
         "outcome": "Visitors move a slider under one picture and see exactly what your work changed.",
         "faq": [

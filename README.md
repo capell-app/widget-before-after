@@ -8,14 +8,14 @@ Setting one up takes two uploads. Each photo gets a short label, such as "March"
 
 Nothing crops or lines the photos up for you, and two shots of the same size taken from the same spot work best. Each comparison holds one pair, and a page can carry several. If a visitor's browser blocks scripts, the two photos sit side by side, each with its label.
 
-- **Price and availability:** Check current availability and price on the [Capell Marketplace listing](https://capell.app/extensions/widget-before-after).
-- **Licence:** Check the licence terms on the [Capell Marketplace listing](https://capell.app/extensions/widget-before-after).
-- **Requires:** `PHP ^8.4`, `capell-app/admin ^1.0`, `capell-app/core ^1.0.66`, `capell-app/frontend ^1.0`, `capell-app/layout-builder ^1.0.44`, `spatie/laravel-package-tools ^1.0`.
-- **Install:** `composer require capell-app/widget-before-after`.
+- **Price and availability:** Check current availability and price on the [Capell Marketplace listing](https://capell.app/marketplace/extensions/widget-before-after).
+- **Licence:** Check the licence terms on the [Capell Marketplace listing](https://capell.app/marketplace/extensions/widget-before-after).
+- **Requires:** `PHP ^8.4`, `capell-app/admin ^1.0`, `capell-app/core ^1.0.79`, `capell-app/frontend ^1.0.79`, `capell-app/layout-builder ^1.0.44`, `spatie/laravel-package-tools ^1.0`.
+- **Install:** `composer require capell-app/widget-before-after:@beta`.
 
 ## Quick Start
 
-1. Install the package: `composer require capell-app/widget-before-after`.
+1. Install the package: `composer require capell-app/widget-before-after:@beta`.
 2. Open a page, click **Layout builder**, **Add widgets**, then choose **Before and After**.
 
 ## For Developers
@@ -28,7 +28,7 @@ This extension works without configuration. There is nothing to set after instal
 
 ## Limits And Pitfalls
 
-- Install the required Capell packages at the versions in `composer.json`: `capell-app/admin ^1.0`, `capell-app/core ^1.0.66`, `capell-app/frontend ^1.0`, `capell-app/layout-builder ^1.0.44`.
+- Install the required Capell packages at the versions in `composer.json`: `capell-app/admin ^1.0`, `capell-app/core ^1.0.79`, `capell-app/frontend ^1.0.79`, `capell-app/layout-builder ^1.0.44`.
 - Keep public Blade and cached HTML free of authoring markers, model IDs, permissions, signed editor URLs, and lazy database queries.
 - Custom write integrations must preserve invalidation for `widget-before-after` cache tags.
 
