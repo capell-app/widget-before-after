@@ -6,6 +6,7 @@
     "kind": "package",
     "capellApiVersion": "^1.0",
     "version": "1.0.0",
+    "launchStatus": "preview",
     "description": "Your before photo and after photo as one picture, with a slider visitors move to reveal the change.",
     "product": {
         "group": "Capell Essentials",
